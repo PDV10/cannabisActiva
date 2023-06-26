@@ -1,0 +1,47 @@
+
+EAMIL CONSULTAS
+
+interfaces-tudai@alumnos.exa.unicen.edu.ar
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+PRESENTACIONES - WIREFRAME
+
+https://docs.google.com/presentation/d/1kjpYHvl44YJMxzpKTbu4PDpyZ68cG-OMjAXEn3dwbsA/edit#slide=id.g25271df24be_0_97
+
+PRESENTACION - VISUAL
+
+https://docs.google.com/presentation/d/133sbW6zhJF9QGJ8yiEq4AbClc0fwndrRonuDBkWqVBE/edit#slide=id.g2554da30350_0_1
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+LINKS PAGINAS DE INSPIRACION
+
+-CANNABIS CONICET https://www.conicet.gov.ar/cannabis/
+-CANNABIS ES https://www.cannabis.es/pw/
+-CANNABIS JUJUY https://cannava.com.ar/
+-CANNABIS CAMEDA https://www.cannabismedicinal.com.ar/
+-CANNABIS Y SALUD https://www.cannabisysalud.org/
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+FONTS
+
+-font-family: 'Noto Sans', sans-serif; //PUEDE SER PARA TITULOS Y/O TEXTO GENERAL
+-font-family: 'Roboto Slab', serif; //PUEDE SER PARA ARTICULOS O CITAS
+-font-family: 'Josefin Sans', sans-serif; //POSIBLE TITULOS
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+COLORES 
+
+-WARNING: FEC500
+-DANGER: FF231D
+-GOOD: 68BE11
+-LIGTHGOOD: 7AEC1B
+
+LINK GOOGLEFONTS : 	<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+------------------------------------------------------------------------------------------------------------------------------------
