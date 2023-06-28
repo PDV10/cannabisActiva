@@ -17,29 +17,37 @@
         <img class="logo" src="img/logo.png" alt="logo Cannabis activa">
         <nav>
             <ul>
-                <li class="items-nav" id="inicio"> <a href="">Inicio</a></li>
-                <li class="items-nav" id="nosotros"> <a href="">Nosotros</a></li>
-                <li class="items-nav" id="noticias"> <a href="">Noticias</a></li>
-                <li class="items-nav" id="contacto"> <a href="">Contacto</a></li>
-                <li class="items-nav" id="search"> <a href=""><i class="bi bi-search"></i></a></li>
-                <li class="items-nav" id="login"> <a href="">Inicio</a></li>
+                <li class="items-nav"> <a href="">Inicio</a></li>
+                <li class="items-nav"> <a href="">Nosotros</a></li>
+                <li class="items-nav"> <a href="">Noticias</a></li>
+                <li class="items-nav"> <a href="">Contacto</a></li>
+                <li class="items-nav"> <a href=""><i class="bi bi-search"></i></a></li>
+                <li class="items-nav" data-bs-toggle="modal" data-bs-target="#exampleModal" id="login"> <a href="">Iniciar Sesion</a></li>
             </ul>
         </nav>
     </header>
     
-    <section class="contenedor contenedor-inicio">
-        <div >
-            <h1>Cannabis Activa Olavarría</h1>
-            <div class="parrafos">
-                <p>Una entidad de bien público sin fines de lucro perteneciente a la ciudad de Olavarría, Pcia. de Buenos Aires, Argentina.</p>
-                <p>Desde nuestra organización pretendemos acercar a todo aquel que así lo requiera, información en torno a la planta de Cannabis Sativa. Ya sea con fines medicinales, terapéuticos, industriales o recreativos.</p>
-                <p>Bajo ningún punto de vista Cannabis Activa promueve el cultivo y/o uso de cannabis. Tampoco se refiere a la planta como una sustancia inocua.</p>
+    <!-- Modal -->
+   <div class="modal fade h-50 " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       
+        <div class="modal-content modal-dialog modal-dialog-centered position-absolute top-50 start-50 translate-middle-x">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
-    </section>
+        
+    </div> 
 
+    </body>
 
-</body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
