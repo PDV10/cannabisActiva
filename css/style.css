@@ -143,9 +143,69 @@ nav ul{
 }
 .contenedor-nosotros .parrafos {
     width: 60%;
-   gap: 40px;
+    gap: 40px;
 }
-/*-------------------------------------- NOSOTROS -------------------------------------- */
+
+/*-------------------------------------- NOTICIAS -------------------------------------- */
+.contenedor-noticias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor-noticias h1{
+    color: var(--colorFuenteOscuraClaro);
+}
+
+.contenedor-noticias .noticias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 80vh;
+    justify-content: center;
+    overflow: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+
+.contenedor-noticias .noticias .card{
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.contenedor-noticias .noticias .card:hover{
+    border: 2px solid var(--colorPrimario);
+}
+
+.contenedor-noticias .noticias a {
+    list-style: none;
+    color: var(--colorFuenteOscuraClaro);
+    text-decoration: none;
+    
+}
+
+.contenedor-noticias .noticias .card .imgNoticia img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor-noticias .noticias .card  .imgNoticia{
+    height: 50%;
+    background-color: chartreuse;
+}
+
+
+.contenedor-noticias .contenedorCard{
+    width: 30%;
+    height: min-content;
+   
+}
+
+/*-------------------------------------- NOTICIA -------------------------------------- */
 .contenedor-noticia{
     width: 100%;
     margin: 0 auto;
@@ -156,7 +216,7 @@ nav ul{
 }
 .img-noticia{
     margin: 50px auto;
-    width: 60%;
+    width: 70%;
     min-height: 300px;
     display: flex;
     justify-content: center;
@@ -182,6 +242,8 @@ nav ul{
     width: 80%;
     margin: 0px auto;
 }
+
+
 /*-------------------------------------- MODAL FORMS -------------------------------------- */
 
 #helper-text{
