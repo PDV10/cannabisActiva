@@ -145,7 +145,7 @@ nav ul{
     width: 60%;
    gap: 40px;
 }
-/*-------------------------------------- NOSOTROS -------------------------------------- */
+/*-------------------------------------- NOTICIA -------------------------------------- */
 .contenedor-noticia{
     width: 100%;
     margin: 0 auto;
@@ -172,6 +172,7 @@ nav ul{
 }
 .contenedor-noticia h3{
     font-family: var(--fuenteTitulos);
+    margin-bottom: 40px auto;
 }
 .contenedor-noticia .parrafos{
     width: 60%;
@@ -181,6 +182,12 @@ nav ul{
     margin-bottom: 30px !important;
     width: 80%;
     margin: 0px auto;
+}
+.texto-cita{
+    text-align: center;
+    font-style: italic;
+    margin: 40px auto;
+    width: 80%;
 }
 /*-------------------------------------- MODAL FORMS -------------------------------------- */
 
