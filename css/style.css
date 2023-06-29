@@ -23,6 +23,7 @@ body{
 
 header{
     position: fixed;
+    top: 0;
     display: flex;
     width: 100vw;
     align-items: center;
@@ -143,6 +144,43 @@ nav ul{
 .contenedor-nosotros .parrafos {
     width: 60%;
    gap: 40px;
+}
+/*-------------------------------------- NOSOTROS -------------------------------------- */
+.contenedor-noticia{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img-noticia{
+    margin: 50px auto;
+    width: 60%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-principal{
+    width: 80%;
+    margin: 50px 0px 50px 0px;
+}
+.contenedor-noticia h1{
+    color: var(--colorFuenteOscuraClaro);
+    margin-top: 50px;
+}
+.contenedor-noticia h3{
+    font-family: var(--fuenteTitulos);
+}
+.contenedor-noticia .parrafos{
+    width: 60%;
+    gap: 40px;
+}
+.contenedor-noticia .parrafos .fst-italic{
+    margin-bottom: 30px !important;
+    width: 80%;
+    margin: 0px auto;
 }
 /*-------------------------------------- MODAL FORMS -------------------------------------- */
 
