@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cannabis Activa</title>
+    <!-- ESTILOS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <img class="logo ms-3" src="img/logo.png" alt="Logo Cannabis activa">
+        </a>
+        <nav>
+            <ul id="lista-nav">
+                <li class="items-nav"> <a id="linkInicio" class="activo link" href="#inicio">Inicio</a></li>
+                <li class="items-nav"> <a id="linkNosotros" class="link" href="#nosotros">Nosotros</a></li>
+                <li class="items-nav"> <a id="linkNoticias" class="link" href="#noticias">Noticias</a></li>
+                <li class="items-nav"> <a class="link" href="#contacto">Contacto</a></li>
+                <li class="items-nav" id="liBuscador">
+                    <a href="" id="ancorBuscador">
+                        <div class="buscador">
+                            <input type="text" placeholder="Buscar" id="inputBuscador" class="esconderInput">
+
+                            <i class="bi bi-search"></i>
+
+                        </div>
+                    </a>
+                </li>
+                <li class="items-nav" data-bs-toggle="modal" data-bs-target="#modalLogin" id="login"> <a>Iniciar
+                        Sesion</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCION INICIO -->
+    <section class="contenedor contenedor-inicio" id="inicio">
+        <div class="cuerpo-inicio">
+            <h1>Cannabis Activa Olavarría</h1>
+            <div class="parrafos">
+                <p>Una entidad de bien público sin fines de lucro perteneciente a la ciudad de Olavarría, Pcia. de
+                    Buenos Aires, Argentina.</p>
+                <p>Desde nuestra organización pretendemos acercar a todo aquel que así lo requiera, información en torno
+                    a la planta de Cannabis Sativa. Ya sea con fines medicinales, terapéuticos, industriales o
+                    recreativos.</p>
+                <p>Bajo ningún punto de vista Cannabis Activa promueve el cultivo y/o uso de cannabis. Tampoco se
+                    refiere a la planta como una sustancia inocua.</p>
+            </div>
+        </div>
+    </section>
+    <hr class="separador">
+    <!-- SECCION NOSOTROS -->
+    <section class="contenedor contenedor-nosotros mt-5 pt-5" id="nosotros">
+        <h1 class="mt-5">Sobre Nosotros</h1>
+
+        <div class="parrafos mt-5">
+            <p><span class="activo">Cannabis Activa</span> es una <span class="resaltado">entidad de
+                    bien
+                    público</span>
+                sin fines de lucro
+                perteneciente a la ciudad de Olavarría,
+                Pcia. de Buenos Aires, Argentina.
+                La agrupación forma parte del <span class="resaltado">F.O.C.A. </span>(Frente de Organizaciones
+                Cannábicas
+                Argentinas) desde el mes de
+                febrero de 2017.
+            </p>
+            <p>
+                Desde nuestra organización pretendemos acercar a todo aquel que así lo requiera,<span class="resaltado">
+                    información</span> en torno a
+                la planta de <span class="resaltado">Cannabis Sativa</span>. Ya sea con fines medicinales, terapéuticos,
+                industriales o recreativos.
+            </p>
+            <p>
+                Estamos completamente convencidos de que el <span class="resaltado">AUTOCULTIVO</span> de esta milenaria
+                planta es la
+                <span class="resaltado">
+                    herramienta de lucha más fuerte
+                </span>
+                que poseemos en lo que a la lucha <span class="resaltado">contra el narcotráfico</span>
+                respecta. Pues desde el punto
+                de vista inmediato sugiere que una persona que <span class="resaltado">AUTOCULTIVA</span>,
+                automaticamente
+                deja de financiar el mercado
+                negro instalado y existente creado a partir de la prohibición.
+            </p>
+            <p>
+                <span class="resaltado">Bajo ningún punto de vista Cannabis Activa promueve el cultivo y/o uso de
+                    cannabis</span>. Tampoco se refiere a
+                la planta como una sustancia inocua.
+            </p>
+            <p>No obstante, si una persona ha decidido consumir cannabis, ya sea con fines recreativos, terapéuticos o
+                medicinales, sostenemos que <span class="resaltado">abastecerse desde el autocultivo</span> es la forma
+                más eficiente y segura en lo
+                que a la <span class="resaltado">reducción de daños</span> respecta</p>
+            <ul class="mt-5 mb-5">
+                <h5 class="bt-3 mb-3">Adquirir cannabis en el mercado negro supone:</h5>
+                <li>El consumo de una sustancia de dudosa procedencia, contaminada, cortada con diversos productos
+                    altamente
+                    perjudiciales para la salud.</li>
+                <li>El contacto con personas firmemente relacionadas al ambiente del delito y las mafias del
+                    narcotráfico.
+                </li>
+                <li>El contacto y acceso a otras drogas presentes en dicho lugar de venta.
+                </li>
+                <li> El financiamiento del narcotráfico.</li>
+            </ul>
+
+
+
+            <p>Por otro lado es necesario aclarar que si bien el cultivo de cannabis posee penas que van de los 4 a 15
+                años de prisión (ley 23.737), <span class="resaltado">consideramos que el autocultivo es un
+                    derecho</span>, y que dicha ley es
+                considerada <span class="resaltado">anticonstitucional</span>, pues va en contra de lo expresado en el
+
+
+                <span class="resaltado">art. 19 de la Constitución
+                    Nacional Argentina.</span>
+            </p>
+            <p class="text-center fst-italic pt-5 mb-0">
+
+                "Las acciones privadas de los hombres que de ningún modo ofendan al orden y a la moral pública, ni
+                perjudiquen a un tercero, están sólo reservadas a Dios, y exentas de la autoridad de los magistrados.
+                Ningún habitante de la Nación será obligado a hacer lo que no manda la ley, ni privado de lo que ella
+                no prohíbe."
+            </p>
+            <p class="text-center resaltado mt-3 pb-5 mb-5">
+                Art. 19 de la Constitución Nacional Argentina.</p>
+
+
+
+        </div>
+        <div class="d-flex justify-content-center mt-3 gap-5 w-100">
+            <div class="d-flex ms-5 flex-column text-center justify-content-center align-items-center">
+                <img width="200px" class="img-fluid" src="img/Cannabis_Activa_Olavarria.png"
+                    alt="Cannabis Activa Olavarria">
+                <p class="w-75 m-2">Cannabis Activa Olavarria Logo Oficial</p>
+            </div>
+            <div class="d-flex ms-5 flex-column text-center justify-content-center align-items-center">
+                <img width="200px" class="img-fluid" src="img/FOCA.jpg" alt="FOCA">
+                <p class="w-75 m-2">Frente de Organizaciones Cannabicas Argentinas Logo Oficial</p>
+            </div>
+        </div>
+    </section>
+    <hr class="separador">
+    <!-- SECCION NOTICIAS -->
+    <section class="contenedor contenedor-noticias mt-5 pt-5" id="noticias">
+        <h1 class="mt-5">Ultimas Noticias</h1>
+        <div class="noticias">
+            <div class="contenedorCard">
+
+                <div class="card m-5">
+                    <a href="noticia.html">
+
+                        <div class="imgNoticia">
+                            <img src="img/noticia/noticia1/DSC_0139-768x513.jpg" class="card-img-top"
+                                alt="imagen noticia 1">
+                        </div>
+
+                        <div class="card-body m-3">
+                            <h5 class="card-title text-center">La UNICEN Tendrá su Propio Cultivo de Cannabis
+                                Experimental</h5>
+                            <p class="card-text">
+                                Un grupo de profesionales logró presentar el primer proyecto
+                                interdisciplinario de cultivo de cannabis experimental en Olavarría.
+                            </p>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+            <div class="contenedorCard ">
+                <div class="card m-5">
+                    <a href="noticia2.html">
+
+                        <div class="imgNoticia">
+                            <img src="img/noticia/noticia2/img1.jpg" class="card-img-top" alt="imagen noticia 2">
+                        </div>
+
+                        <div class="card-body m-3">
+                            <h5 class="card-title text-center">Beneficios de las sustancias del cannabis THCA y CBDA
+                            </h5>
+                            <p class="card-text">Por mucho que pudiésemos estar tentados a hablar en términos de
+                                sustancias que compitan con las propiedades curativas de la marihuana...</p>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+
+            <div class="contenedorCard ">
+                <div class="card m-5">
+                    <a href="noticia3.html">
+
+                        <div class="imgNoticia">
+                            <img src="img/noticia/noticia3/img1.jpg" class="card-img-top" alt="imagen noticia 3">
+                        </div>
+
+                        <div class="card-body m-3">
+                            <h5 class="card-title text-center">El autocultivo gana terreno caso a caso en la Argentina
+                            </h5>
+                            <p class="card-text">
+                                En el país se multiplican casos en que la Justicia autoriza el cultivo casero. Mariano
+                                Fusero, abogado especializado, defiende la práctica
+                            </p>
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Modal Login-->
+    <div class="modal fade " id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+        <div class="modal-dialog modal-dialog-centered w-75">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de Sesion</h5>
+                    <button id="btn-log-close" type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="form-login">
+                        <div class="mb-3">
+                            <label for="input-log-email" class="form-label">Email</label>
+                            <input value="admin@admin.com" required type="email" class="form-control"
+                                id="input-log-email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-log-password" class="form-label">Contraseña</label>
+                            <input value="admin" required type="password" class="form-control" id="input-log-password">
+                            <span id="helper-text">
+                                Debe ser de entre 5 y 10 caracteres.
+                            </span>
+                        </div>
+
+                        <button id="btn-logearse" type="submit" class="btn btn-primary">Inicar Sesion</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <div class="oculto" id="alerta-login"></div>
+                        <div class="modal-footer mt-3">
+
+                            <p class="items-nav">Si aun no posee una cuenta
+                                <a data-bs-toggle="modal" data-bs-target="#modalRegister" id="register"
+                                    class="link-opacity-100">
+                                    Registrese
+                                    <i class="bi bi-box-arrow-up-left"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Modal Register-->
+    <div class="modal fade " id="modalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crear una cuenta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="form-registro">
+                        <div class="mb-3">
+                            <label for="input-name" class="form-label">Nombre</label>
+                            <input required type="text" class="form-control" id="input-name"
+                                aria-describedby="nameHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-lastname" class="form-label">Apellido</label>
+                            <input required type="text" class="form-control" id="input-lastname"
+                                aria-describedby="lastnameHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-reg-email" class="form-label">Email</label>
+                            <input required type="email" class="form-control" id="input-reg-email"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-reg-password" class="form-label">Contraseña</label>
+                            <input required type="password" class="form-control" id="input-reg-password">
+                            <span id="helper-text">
+                                Debe ser de entre 5 y 10 caracteres.
+                            </span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-reg-rePassword" class="form-label">Confirmar Contraseña</label>
+                            <input required type="password" class="form-control" id="input-reg-rePassword">
+                            <span id="helper-text">
+                                Debe ser de entre 5 y 10 caracteres.
+                            </span>
+                        </div>
+
+                        <button id="btn-registrarse" type="submit" class="btn btn-primary">Registrarse</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <div id="alerta-registro"></div>
+
+                        <div class="modal-footer mt-3">
+
+                            <p class="items-nav">Volver al
+                                <a data-bs-toggle="modal" data-bs-target="#modalLogin" id="register" href=""
+                                    class="link-opacity-100">
+                                    Login
+                                    <i class="bi bi-box-arrow-up-left"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+
+        </ul>
+        <p class="text-center text-body-secondary">© 2023 TUDAI Olavarria, Grupo 11</p>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
+</html>
