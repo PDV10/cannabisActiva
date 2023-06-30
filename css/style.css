@@ -81,9 +81,44 @@ nav ul{
     transition: 0.3s;
 }
 
-
 .items-nav a:hover:after{
     width: 100%;
+}
+
+.buscador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 35px;
+    border-radius: 30px;
+    transition: 0.8s;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.buscador input{
+    height: 30px;
+    border: transparent;
+    outline: none; 
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--colorFuenteOscuraClaro);
+    font-family: var(--funteParrafos);
+    transition: 0.8s;
+    
+}
+
+.buscador input:focus{
+    width: 100px;
+}
+
+.expandirInput{
+    width: 100px;
+}
+
+.esconderInput{
+    width: 0;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
