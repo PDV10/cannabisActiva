@@ -371,3 +371,50 @@ form .items-nav a{
     height: 0;
     padding: 0;
  }
+
+ /*-------------------------------------- CONTACTO -------------------------------------- */
+
+ .contenedor-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor-contacto h1{
+    color: var(--colorFuenteOscuraClaro);
+}
+
+.contacto h1{
+    color: var(--colorPrimario);
+}
+
+.contenedor-contacto .contacto{
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+    width: 90%;
+}
+
+.contacto .section-contacto, .contacto .form-contacto{
+    width: 45%;
+    height: 90%;
+    margin: 3% 0; 
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.contacto .section-contacto img{
+    width: 35%;
+
+}
+
+.contacto .form-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto .form-contacto div{
+    width: 90%;
+    height: 80%;
+}
