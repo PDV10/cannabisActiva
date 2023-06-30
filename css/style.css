@@ -45,7 +45,6 @@ nav ul{
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-
 }
 
 .resaltado{
@@ -209,7 +208,6 @@ nav ul{
 
 .contenedor-noticias .noticias .card  .imgNoticia{
     height: 50%;
-    background-color: chartreuse;
 }
 
 
@@ -247,7 +245,8 @@ nav ul{
 }
 .contenedor-noticia h3{
     font-family: var(--fuenteTitulos);
-    margin: 40px auto;
+    margin: 60px 0px 60px 0px;
+
 }
 .contenedor-noticia .parrafos{
     width: 60%;
@@ -258,12 +257,47 @@ nav ul{
     width: 80%;
     margin: 0px auto;
 }
+
 .texto-cita{
     text-align: center;
     font-style: italic;
     font-weight: bold;
     margin: 40px auto;
     width: 80%;
+}
+/*-------------------------------------- COMENTARIOS -------------------------------------- */
+.contenedor-comentarios{
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-comentarios .card{
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contenedor-comentarios .card p{
+    margin-left: 40px;
+}
+.contenedor-comentarios textarea{
+    border: none;
+    border-bottom: 1px solid var(--colorFuenteOscuraClaro);
+}
+.contenedor-input-comentar{
+    width: 100%;
+    display: flex;
+
+}
+.contenedor-input-comentar div{
+width: 100%; 
+}
+.img-perfil-sm{
+    width: 50px;
+    height: 50px;
+    background-color: #383838;
+    border-radius: 50%;
 }
 /*-------------------------------------- MODAL FORMS -------------------------------------- */
 
