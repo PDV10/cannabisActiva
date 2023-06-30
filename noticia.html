@@ -22,14 +22,25 @@
 
 <body>
     <header>
-        <img class="logo ms-3" src="img/logo.png" alt="logo Cannabis activa">
+        <a href="/">
+            <img class="logo ms-3" src="img/logo.png" alt="Logo Cannabis activa">
+        </a>
         <nav>
             <ul id="lista-nav">
-                <li class="items-nav"> <a class="link" href="index.html">Inicio</a></li>
-                <li class="items-nav"> <a class="link" href="index.html#nosotros">Nosotros</a></li>
-                <li class="items-nav"> <a class="activo link" href="index.html#noticias">Noticias</a></li>
+                <li class="items-nav"> <a id="linkInicio" class="activo link" href="index.html#inicio">Inicio</a></li>
+                <li class="items-nav"> <a id="linkNosotros" class="link" href="index.html#nosotros">Nosotros</a></li>
+                <li class="items-nav"> <a id="linkNoticias" class="link" href="index.html#noticias">Noticias</a></li>
                 <li class="items-nav"> <a class="link" href="index.html#contacto">Contacto</a></li>
-                <li class="items-nav"> <a class="link" href=""><i class="bi bi-search"></i></a></li>
+                <li class="items-nav" id="liBuscador">
+                    <a href="" id="ancorBuscador">
+                        <div class="buscador">
+                            <input type="text" placeholder="Buscar" id="inputBuscador" class="esconderInput">
+
+                            <i class="bi bi-search"></i>
+
+                        </div>
+                    </a>
+                </li>
                 <li class="items-nav" data-bs-toggle="modal" data-bs-target="#modalLogin" id="login"> <a>Iniciar
                         Sesion</a>
                 </li>
@@ -127,7 +138,7 @@
             </p>
 
             <p>
-                Y sigue: 
+                Y sigue:
             </p>
 
             <p class="texto-cita">“Trabajar cerca de la clínica es central para que los datos
@@ -208,7 +219,7 @@
             <p class="texto-cita">
                 “Tratamos de provocar discusiones para que se generen cosas”, concluye Barreto.
             </p>
-            
+
             <p>
                 Fotos de cortesía.
             </p>
@@ -272,7 +283,119 @@
         <p class="text-center text-body-secondary">© 2023 TUDAI Olavarria, Grupo 11</p>
     </footer>
 
+    <!-- Modal Login-->
+    <div class="modal fade " id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
+
+        <div class="modal-dialog modal-dialog-centered w-75">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inicio de Sesion</h5>
+                    <button id="btn-log-close" type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="form-login">
+                        <div class="mb-3">
+                            <label for="input-log-email" class="form-label">Email</label>
+                            <input value="admin@admin.com" required type="email" class="form-control"
+                                id="input-log-email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-log-password" class="form-label">Contraseña</label>
+                            <input value="admin" required type="password" class="form-control" id="input-log-password">
+                            <span id="helper-text">
+                                Debe ser de entre 5 y 10 caracteres.
+                            </span>
+                        </div>
+
+                        <button id="btn-logearse" type="submit" class="btn btn-primary">Inicar Sesion</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <div class="oculto" id="alerta-login"></div>
+                        <div class="modal-footer mt-3">
+
+                            <p class="items-nav">Si aun no posee una cuenta
+                                <a data-bs-toggle="modal" data-bs-target="#modalRegister" id="register"
+                                    class="link-opacity-100">
+                                    Registrese
+                                    <i class="bi bi-box-arrow-up-left"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal Register-->
+    <div class="modal fade " id="modalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h5 class="modal-title">Crear una cuenta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="form-registro">
+                        <div class="mb-3">
+                            <label for="input-name" class="form-label">Nombre</label>
+                            <input required type="text" class="form-control" id="input-name"
+                                aria-describedby="nameHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-lastname" class="form-label">Apellido</label>
+                            <input required type="text" class="form-control" id="input-lastname"
+                                aria-describedby="lastnameHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-reg-email" class="form-label">Email</label>
+                            <input required type="email" class="form-control" id="input-reg-email"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-reg-password" class="form-label">Contraseña</label>
+                            <input required type="password" class="form-control" id="input-reg-password">
+                            <span id="helper-text">
+                                Debe ser de entre 5 y 10 caracteres.
+                            </span>
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-reg-rePassword" class="form-label">Confirmar Contraseña</label>
+                            <input required type="password" class="form-control" id="input-reg-rePassword">
+                            <span id="helper-text">
+                                Debe ser de entre 5 y 10 caracteres.
+                            </span>
+                        </div>
+
+                        <button id="btn-registrarse" type="submit" class="btn btn-primary">Registrarse</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <div id="alerta-registro"></div>
+
+                        <div class="modal-footer mt-3">
+
+                            <p class="items-nav">Volver al
+                                <a data-bs-toggle="modal" data-bs-target="#modalLogin" id="register" href=""
+                                    class="link-opacity-100">
+                                    Login
+                                    <i class="bi bi-box-arrow-up-left"></i>
+                                </a>
+                            </p>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"

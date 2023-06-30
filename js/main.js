@@ -18,19 +18,19 @@ let users = [USER_X, USER_ADMIN];
 let session = false;
 let links = document.querySelectorAll(".link");
 
-let ancorBuscador = document.getElementById("ancorBuscador").addEventListener("click", (e)=>{
+let ancorBuscador = document.getElementById("ancorBuscador").addEventListener("click", (e) => {
     e.preventDefault();
 });
 
 let input = document.getElementById("inputBuscador");
 let liBuscador = document.getElementById("liBuscador")
 
-liBuscador.addEventListener("mouseover", ()=>{
+liBuscador.addEventListener("mouseover", () => {
     input.classList.remove("esconderInput")
     input.classList.add("expandirInput")
 })
 
-liBuscador.addEventListener("mouseleave", ()=>{
+liBuscador.addEventListener("mouseleave", () => {
     input.classList.add("esconderInput")
     input.classList.remove("expandirInput")
 })
@@ -84,7 +84,7 @@ formRegistro.addEventListener("submit", (e) => {
 });
 
 formLogin.addEventListener("submit", (e) => {
-
+    e.preventDefault();
     users.forEach(user => {
         if (inputLogEmail.value == user.email) {
             flagEmail = true;
@@ -121,10 +121,10 @@ function activateSession(user) {
 
     let a = btnShowLogin.firstChild;
     btnShowLogin.removeChild(a);
-    btnShowLogin.innerHTML = `<a>Cierra Sesion ${user.nombre}</a>`;
+    btnShowLogin.innerHTML = `<a href="index.html">Cierra Sesion ${user.nombre}</a>`;
 
     btnShowLogin.addEventListener("click", (e) => {
-        e.preventDefault();
+
         if (session)
             desactivateSession();
     })

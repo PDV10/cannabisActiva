@@ -22,14 +22,25 @@
 
 <body>
     <header>
-        <img class="logo ms-3" src="img/logo.png" alt="logo Cannabis activa">
+        <a href="/">
+            <img class="logo ms-3" src="img/logo.png" alt="Logo Cannabis activa">
+        </a>
         <nav>
             <ul id="lista-nav">
-                <li class="items-nav"> <a class="link" href="index.html">Inicio</a></li>
-                <li class="items-nav"> <a class="link" href="index.html#nosotros">Nosotros</a></li>
-                <li class="items-nav"> <a class="activo link" href="index.html#noticias">Noticias</a></li>
-                <li class="items-nav"> <a class="link" href="index.html#contacto">Contacto</a></li>
-                <li class="items-nav"> <a class="link" href=""><i class="bi bi-search"></i></a></li>
+                <li class="items-nav"> <a id="linkInicio" class="activo link" href="#inicio">Inicio</a></li>
+                <li class="items-nav"> <a id="linkNosotros" class="link" href="#nosotros">Nosotros</a></li>
+                <li class="items-nav"> <a id="linkNoticias" class="link" href="#noticias">Noticias</a></li>
+                <li class="items-nav"> <a class="link" href="#contacto">Contacto</a></li>
+                <li class="items-nav" id="liBuscador">
+                    <a href="" id="ancorBuscador">
+                        <div class="buscador">
+                            <input type="text" placeholder="Buscar" id="inputBuscador" class="esconderInput">
+
+                            <i class="bi bi-search"></i>
+
+                        </div>
+                    </a>
+                </li>
                 <li class="items-nav" data-bs-toggle="modal" data-bs-target="#modalLogin" id="login"> <a>Iniciar
                         Sesion</a>
                 </li>
@@ -43,32 +54,46 @@
         </div>
         <div class="parrafos">
             <p>
-                Por mucho que pudiésemos estar tentados a hablar en términos de sustancias que compitan con 
+                Por mucho que pudiésemos estar tentados a hablar en términos de sustancias que compitan con
                 las propiedades curativas de la marihuana, la verdad es que lo que hace al cannabis tan notable
                 en tantos frentes es la sinergia que parece ocurrir entre todas las sustancias que tiene.
             </p>
             <p class="texto-cita">
-                Desde el visionario investigador de cannabinoides Rafael Mechoulam que empezó a escribir sobre el 
-                “ Efecto Entourage (efecto séquito o comitiva)” de la sustancia a mediados de los años noventa, la ciencia ha estado aprendiendo más y más acerca de cómo cada componente molecular de la planta de cannabis trabaja en conjunto para la curación en una multitud de niveles. Esto es cierto por el estado en que se encuentran estas sustancias. El  THCA y el CBDA ambos se encuentran en la planta del cannabis en crudo o natural. Y la investigación reciente está descubriendo que ambos tienen
-                 características propias de gran alcance cuando se trata de tratamientos de las enfermedades, especialmente el cáncer.
+                Desde el visionario investigador de cannabinoides Rafael Mechoulam que empezó a escribir sobre el
+                “ Efecto Entourage (efecto séquito o comitiva)” de la sustancia a mediados de los años noventa, la
+                ciencia ha estado aprendiendo más y más acerca de cómo cada componente molecular de la planta de
+                cannabis trabaja en conjunto para la curación en una multitud de niveles. Esto es cierto por el estado
+                en que se encuentran estas sustancias. El THCA y el CBDA ambos se encuentran en la planta del cannabis
+                en crudo o natural. Y la investigación reciente está descubriendo que ambos tienen
+                características propias de gran alcance cuando se trata de tratamientos de las enfermedades,
+                especialmente el cáncer.
             </p>
             <h3 class="mt-5 mb-3 fuente-primaria">¿Cuáles son el THC-A y CBD-A?</h3>
             <p>
-                El ácido Cannabidiólico (CDB-A) y el ácido Tetrahidrocannabinol ( THCA ) son similares en muchos sentidos. 
-                Ambos son sustancias a base de ácido que se encuentran en la planta del cannabis en crudo o natural. Ambos no son psicoactivos.
-                 Y ambos se convierten en sus respectivos homólogos CBD y THC cuando se calientan por encima de una cierta temperatura 
-                (aproximadamente entre 94 a144 grados celsius (200 a 290 F) para el THCA y entre 115 a 144 grados celsius (240 F a 290 F) para el CBDA.
+                El ácido Cannabidiólico (CDB-A) y el ácido Tetrahidrocannabinol ( THCA ) son similares en muchos
+                sentidos.
+                Ambos son sustancias a base de ácido que se encuentran en la planta del cannabis en crudo o natural.
+                Ambos no son psicoactivos.
+                Y ambos se convierten en sus respectivos homólogos CBD y THC cuando se calientan por encima de una
+                cierta temperatura
+                (aproximadamente entre 94 a144 grados celsius (200 a 290 F) para el THCA y entre 115 a 144 grados
+                celsius (240 F a 290 F) para el CBDA.
             </p>
 
             <p>
-                El proceso a través del cual estas sustancias “A” son capaces de convertir en sus homólogos más conocidos se llama descarboxilación.
-                 Esto se debe a que tanto los átomos de carbono del THCA como los de CBDA se pierden cuando se calienta para convertirse en THC y CBD.   La forma más común para producirse la descarboxilación es a través de fumar o vaporizar, 
-                aunque también cocinando u horneando el cannabis se estimula la descarboxilación para la fabricación de productos comestibles.
+                El proceso a través del cual estas sustancias “A” son capaces de convertir en sus homólogos más
+                conocidos se llama descarboxilación.
+                Esto se debe a que tanto los átomos de carbono del THCA como los de CBDA se pierden cuando se calienta
+                para convertirse en THC y CBD. La forma más común para producirse la descarboxilación es a través de
+                fumar o vaporizar,
+                aunque también cocinando u horneando el cannabis se estimula la descarboxilación para la fabricación de
+                productos comestibles.
             </p>
 
             <p>
-                El THCA y el CBDA son similares en la forma más importante: 
-                ambos de estos cannabinoides pueden ayudar con la curación de algunas de las condiciones de enfermedades más graves.
+                El THCA y el CBDA son similares en la forma más importante:
+                ambos de estos cannabinoides pueden ayudar con la curación de algunas de las condiciones de enfermedades
+                más graves.
             </p>
 
             <h3 class="mt-5 mb-3 fuente-primaria"> El poder curativo del cáncer-de CDBA</h3>
@@ -76,44 +101,55 @@
                 <img src="img/noticia/noticia2/img2.png" alt="">
             </div>
 
-            
+
             <p>
-                El CBDA ha estado últimamente mucho en las noticias, sobre todo para las recién encontradas formas en que se ha demostrado inhibir el cáncer.
-                 La relación entre el cáncer y el CBDA fue catalizada por un estudio de 2012 que observó el efecto del CBDA en las células del cáncer de mama. 
-                 Esto y los estudios posteriores descubrieron que el CBDA del cannabis en bruto puede suprimir la enzima COX-2,
-                 un importante promotor de la metástasis del cáncer de mama, así como otras formas de cáncer.
+                El CBDA ha estado últimamente mucho en las noticias, sobre todo para las recién encontradas formas en
+                que se ha demostrado inhibir el cáncer.
+                La relación entre el cáncer y el CBDA fue catalizada por un estudio de 2012 que observó el efecto del
+                CBDA en las células del cáncer de mama.
+                Esto y los estudios posteriores descubrieron que el CBDA del cannabis en bruto puede suprimir la enzima
+                COX-2,
+                un importante promotor de la metástasis del cáncer de mama, así como otras formas de cáncer.
             </p>
 
-            <p >
+            <p>
                 El último estudio, publicado en enero de 2017 de la revista Journal of Natural Medicine por
-                 investigadores de la Universidad Internacional de Hiroshima, añade más luz al tema. 
-                 Los investigadores descubrieron una posible forma por la que el CBDA inhibe la enzima COX-2 en los tumores altamente agresivos de cáncer de mama. 
-                 Su estudio se centró en la inhibición de la proto oncogén del CBDA c-Fos ,
-                 un precursor común de las proteínas implicadas en la metástasis del cáncer.
+                investigadores de la Universidad Internacional de Hiroshima, añade más luz al tema.
+                Los investigadores descubrieron una posible forma por la que el CBDA inhibe la enzima COX-2 en los
+                tumores altamente agresivos de cáncer de mama.
+                Su estudio se centró en la inhibición de la proto oncogén del CBDA c-Fos ,
+                un precursor común de las proteínas implicadas en la metástasis del cáncer.
             </p>
-            
+
             <p>
                 Por caso, el proyecto busca estandarizar los cultivos y democratizar información.
             </p>
 
             <p>
-                El CBD-A también se ha conocido durante algún tiempo por sus efectos anti-inflamatorios; de hecho, 
-                esta es una gran parte de lo que lo convierte en un potencial asesino del cáncer. En 2011 un estudio sueco evaluó seis cannabinoides diferentes
-                el CBDA y el THCA, así como el THC, CBD, CBDA, CBG y CBGA, por sus efectos sobre los procesos inflamatorios, incluyendo la COX-2. 
+                El CBD-A también se ha conocido durante algún tiempo por sus efectos anti-inflamatorios; de hecho,
+                esta es una gran parte de lo que lo convierte en un potencial asesino del cáncer. En 2011 un estudio
+                sueco evaluó seis cannabinoides diferentes
+                el CBDA y el THCA, así como el THC, CBD, CBDA, CBG y CBGA, por sus efectos sobre los procesos
+                inflamatorios, incluyendo la COX-2.
                 Encontraron que seis de estas sustancias en su conjunto tuvieron un profundo efecto en los procesos
                 inflamatorios en líneas celulares de cáncer de colon en laboratorio. Según los investigadores:
             </p>
-               
+
             <p class="texto-cita">
-                “Los endocannabinoides son estructuralmente similares a ácido araquidónico y se han sugerido para interferir con el proceso inflamatorio. 
+                “Los endocannabinoides son estructuralmente similares a ácido araquidónico y se han sugerido para
+                interferir con el proceso inflamatorio.
                 También se ha demostrado que inhibe la proliferación de las células de cáncer “.
             </p>
 
             <p>
-                El ácido araquidónico es un ácido graso omega-6, que es un elemento necesario en el cuerpo para la salud del cerebro y el funcionamiento general de casi todos los 
-                sistemas en el cuerpo. Es un antioxidante y mediador de las reacciones inflamatorias nocivas, como las que ocurren con las principales enfermedades como el cáncer.
-                 El descubrimiento del estudio de las estructuras de endocannabinoides que son similares a los de otras sustancias curativas en el cuerpo es excitante.
-                 Es una prueba más de la capacidad de cannabis »para equilibrar el sistema endocannabinoide para la curación total de la enfermedad.
+                El ácido araquidónico es un ácido graso omega-6, que es un elemento necesario en el cuerpo para la salud
+                del cerebro y el funcionamiento general de casi todos los
+                sistemas en el cuerpo. Es un antioxidante y mediador de las reacciones inflamatorias nocivas, como las
+                que ocurren con las principales enfermedades como el cáncer.
+                El descubrimiento del estudio de las estructuras de endocannabinoides que son similares a los de otras
+                sustancias curativas en el cuerpo es excitante.
+                Es una prueba más de la capacidad de cannabis »para equilibrar el sistema endocannabinoide para la
+                curación total de la enfermedad.
             </p>
 
             <h3 class="mt-5 mb-3 fuente-primaria">THC-A: Un sanador potente y aún misterioso</h3>
@@ -122,36 +158,50 @@
             </div>
 
             <p>
-                Aunque todavía hace falta mucha investigación sobre el CBDA, todavía existe más misterio acerca del THCA, la forma no psicoactiva al natural 
-                (antes de descarboxilación) del THC. El estudio sueco mencionado anteriormente, así como algunos otros estudios, sin embargo,
-                 han demostrado que el THCA es también un potente anti-inflamatorio. Como tal, también se cree que tiene efectos antiproliferativos contra el crecimiento del cáncer y 
-                 la metástasis. 
+                Aunque todavía hace falta mucha investigación sobre el CBDA, todavía existe más misterio acerca del
+                THCA, la forma no psicoactiva al natural
+                (antes de descarboxilación) del THC. El estudio sueco mencionado anteriormente, así como algunos otros
+                estudios, sin embargo,
+                han demostrado que el THCA es también un potente anti-inflamatorio. Como tal, también se cree que tiene
+                efectos antiproliferativos contra el crecimiento del cáncer y
+                la metástasis.
                 También es un conocido neuro-protector, un anti-espasmódico y un potente endocannabinoide para el dolor.
             </p>
 
             <p>
-                El THCA también se ha demostrado que es un regulador del sistema inmune. Según la ciencia más reciente, los efectos del THCA del sistema endocannabinoide en su conjunto,
-                 no sólo actúa en los receptores CB1. El THCA puede afectar a la liberación de enzimas inflamatorias COX-1 y COX-2 así como al TNF-alfa. 
-                 También ayuda en la producción de interleucina-10 . Esta potente citocina antiinflamatoria, 
-                también conocida como Human Cytokine Synthesis Inhibitory Factor (CSIF), se produce por las células T en el sistema inmune.
+                El THCA también se ha demostrado que es un regulador del sistema inmune. Según la ciencia más reciente,
+                los efectos del THCA del sistema endocannabinoide en su conjunto,
+                no sólo actúa en los receptores CB1. El THCA puede afectar a la liberación de enzimas inflamatorias
+                COX-1 y COX-2 así como al TNF-alfa.
+                También ayuda en la producción de interleucina-10 . Esta potente citocina antiinflamatoria,
+                también conocida como Human Cytokine Synthesis Inhibitory Factor (CSIF), se produce por las células T en
+                el sistema inmune.
             </p>
 
             <p>
-                Mientras que el CBD ha sido conocido por sus efectos sobre la epilepsia y las convulsiones desde hace algún tiempo, en los últimos años el Δ9-THC se ha encontrado 
-                ser útil en una nueva investigación que apunta a  los beneficios del THCA  en este frente también. Entre las investigaciones más recientes hay un estudio
-                realizado por la Universidad de Alabama y publicado el 10 de enero 2017 en la edición de la revista médica Epilepsy and Behavior  
+                Mientras que el CBD ha sido conocido por sus efectos sobre la epilepsia y las convulsiones desde hace
+                algún tiempo, en los últimos años el Δ9-THC se ha encontrado
+                ser útil en una nueva investigación que apunta a los beneficios del THCA en este frente también. Entre
+                las investigaciones más recientes hay un estudio
+                realizado por la Universidad de Alabama y publicado el 10 de enero 2017 en la edición de la revista
+                médica Epilepsy and Behavior
                 (Epilepsia y Comportamiento) .
             </p>
 
             <h3 class="mt-5 mb-3 fuente-primaria">Se necesita más investigación sobre el CBD-A y el THC-A</h3>
             <p>
-                La investigación que se tiene sobre los beneficios para la salud tanto del CBDA como del THCA, sobre todo cuando se trata de cáncer, 
-                ofrece una gran noticia para aquellos que quieren sanarse con el cannabis, pero cuyos sistemas pueden no responder positivamente a los 
-                efectos psico-activos del THC. Con la cada vez más apertura mundial de las puertas de la marihuana medicinal (toda la planta y no sólo el CBD) 
-                recibirá más atención en la relación de las sustancias que existen en la planta natural del cannabis como el CBDA y también el THCA.
+                La investigación que se tiene sobre los beneficios para la salud tanto del CBDA como del THCA, sobre
+                todo cuando se trata de cáncer,
+                ofrece una gran noticia para aquellos que quieren sanarse con el cannabis, pero cuyos sistemas pueden no
+                responder positivamente a los
+                efectos psico-activos del THC. Con la cada vez más apertura mundial de las puertas de la marihuana
+                medicinal (toda la planta y no sólo el CBD)
+                recibirá más atención en la relación de las sustancias que existen en la planta natural del cannabis
+                como el CBDA y también el THCA.
             </p>
             <p>
-                fuente : <a href="https://www.lamarihuana.com/cuales-los-beneficios-del-thc-a-cbd-a/">lamarihuana.com</a>
+                fuente : <a
+                    href="https://www.lamarihuana.com/cuales-los-beneficios-del-thc-a-cbd-a/">lamarihuana.com</a>
             </p>
             <p>
                 Fotos de cortesía.
@@ -172,31 +222,36 @@
             <div class="modal-content ">
                 <div class="modal-header">
                     <h5 class="modal-title">Inicio de Sesion</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button id="btn-log-close" type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
 
-                    <form>
+                    <form id="form-login">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input required type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                            <label for="input-log-email" class="form-label">Email</label>
+                            <input value="admin@admin.com" required type="email" class="form-control"
+                                id="input-log-email" aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                            <input required type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="input-log-password" class="form-label">Contraseña</label>
+                            <input value="admin" required type="password" class="form-control" id="input-log-password">
                             <span id="helper-text">
                                 Debe ser de entre 5 y 10 caracteres.
                             </span>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Inicar Sesion</button>
+                        <button id="btn-logearse" type="submit" class="btn btn-primary">Inicar Sesion</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <div class="oculto" id="alerta-login"></div>
                         <div class="modal-footer mt-3">
 
-                            <p class="items-nav">Si aun no posee una cuenta <a data-bs-toggle="modal"
-                                    data-bs-target="#modalRegister" id="register" class="link-opacity-100">Registrese <i
-                                        class="bi bi-box-arrow-up-left"></i></a>
+                            <p class="items-nav">Si aun no posee una cuenta
+                                <a data-bs-toggle="modal" data-bs-target="#modalRegister" id="register"
+                                    class="link-opacity-100">
+                                    Registrese
+                                    <i class="bi bi-box-arrow-up-left"></i>
+                                </a>
                             </p>
 
                         </div>
@@ -207,12 +262,11 @@
         </div>
 
     </div>
-
     <!-- Modal Register-->
     <div class="modal fade " id="modalRegister" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
 
-        <div class="modal-dialog modal-dialog-centered w-75">
+        <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content ">
                 <div class="modal-header">
                     <h5 class="modal-title">Crear una cuenta</h5>
@@ -220,29 +274,41 @@
                 </div>
                 <div class="modal-body">
 
-                    <form>
+                    <form id="form-registro">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <label for="input-name" class="form-label">Nombre</label>
+                            <input required type="text" class="form-control" id="input-name"
+                                aria-describedby="nameHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-lastname" class="form-label">Apellido</label>
+                            <input required type="text" class="form-control" id="input-lastname"
+                                aria-describedby="lastnameHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input-reg-email" class="form-label">Email</label>
+                            <input required type="email" class="form-control" id="input-reg-email"
                                 aria-describedby="emailHelp">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                            <input required type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="input-reg-password" class="form-label">Contraseña</label>
+                            <input required type="password" class="form-control" id="input-reg-password">
                             <span id="helper-text">
                                 Debe ser de entre 5 y 10 caracteres.
                             </span>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Confirmar Contraseña</label>
-                            <input required type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="input-reg-rePassword" class="form-label">Confirmar Contraseña</label>
+                            <input required type="password" class="form-control" id="input-reg-rePassword">
                             <span id="helper-text">
                                 Debe ser de entre 5 y 10 caracteres.
                             </span>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                        <button id="btn-registrarse" type="submit" class="btn btn-primary">Registrarse</button>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <div id="alerta-registro"></div>
+
                         <div class="modal-footer mt-3">
 
                             <p class="items-nav">Volver al
@@ -261,7 +327,6 @@
         </div>
 
     </div>
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
