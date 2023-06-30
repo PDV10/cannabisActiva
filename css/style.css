@@ -40,6 +40,13 @@ nav ul{
     list-style: none;
     margin: 0;
 }
+.separador{
+    margin: 50px 0px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+}
 
 .resaltado{
     font-weight: bold;
@@ -107,6 +114,12 @@ nav ul{
     height: 350px;
     background-color: #00000048;
     backdrop-filter: blur(3px);
+    mask: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 75%,
+    rgba(0, 0, 0, 1) 87.5%,
+    rgba(0, 0, 0, 1) 100%
+  );
     border-radius: 15px;
     gap: 20px;
     padding: 20px 0px;
@@ -163,20 +176,22 @@ nav ul{
     flex-direction: row;
     flex-wrap: wrap;
     width: 90%;
-    height: 80vh;
+    height: auto;
     justify-content: center;
-    overflow: auto;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 
 .contenedor-noticias .noticias .card{
     height: auto;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.3s ease;
 }
 
 .contenedor-noticias .noticias .card:hover{
-    border: 2px solid var(--colorPrimario);
+    
+    border: 1px solid var(--colorPrimario);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transform: scale(1.1)
 }
 
 .contenedor-noticias .noticias a {
@@ -246,6 +261,7 @@ nav ul{
 .texto-cita{
     text-align: center;
     font-style: italic;
+    font-weight: bold;
     margin: 40px auto;
     width: 80%;
 }
@@ -256,7 +272,7 @@ nav ul{
     color: grey;
 }
 form{
-    padding: 30px 30px 0px 30px;
+    padding: 0px 30px 0px 30px;
 }
 
 form .items-nav a{
