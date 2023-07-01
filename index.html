@@ -31,7 +31,7 @@
 
         <nav>
             <ul id="lista-nav">
-                <li class="items-nav"> <a id="linkInicio" class="activo link" href="#inicio">Inicio</a></li>
+                <li class="items-nav linkInicio"> <a id="linkInicio" class="activo link" href="#inicio">Inicio</a></li>
                 <li class="items-nav"> <a id="linkNosotros" class="link" href="#nosotros">Nosotros</a></li>
                 <li class="items-nav"> <a id="linkNoticias" class="link" href="#noticias">Noticias</a></li>
                 <li class="items-nav"> <a class="link" href="#contacto">Contacto</a></li>
@@ -417,6 +417,49 @@
         </div>
 
     </div>
+
+    <!-- Modal Tabla Usuarios-->
+    <div class="modal fade" id="modalTabla" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+          <div class="modal-content modalTabla me-5">
+            <div class="modal-header">
+                <h5 class="modal-title">Gestion de usuarios</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+            <table class="table">
+            
+                <thead>
+                    <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Usuario</th>
+                    <th scope="col">Mail</th>
+                    <th scope="col" class="text-center">Accion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">1</th>
+                    <td>Lionel Messi</td>
+                    <td>LeoMessi@gmail.com</td>
+                    <td class="text-center"><button class="btn bg-danger text-light">X</button></td>
+                    </tr>
+                    <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Jacob@gmail.com</td>
+                    <td class="text-center"><button class="btn bg-danger text-light">X</button></td>
+                    </tr>
+                </tbody>
+                </table>
+                <div id="msjTabla">
+                </div>
+                <button type="button" id="btnGuardarTabla" class="btn btn-primary align-items-end">Guardar</button>
+            </div>
+           
+          </div>
+        </div>
+      </div>
 
     <hr class="separador">
     <footer>
