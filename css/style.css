@@ -421,3 +421,39 @@ form .items-nav a{
     width: 90%;
     height: 80%;
 }
+
+ /*-------------------------------------- NOTICIA MOBILE -------------------------------------- */
+
+.imgMobile{
+    width: 95vw;
+}
+
+.parrafosMobile{
+    width: 90%;
+}
+
+.parrafosMobile p{
+    font-size: 18px;
+}
+
+.parrafosMobile p.texto-cita{
+    font-size: 16px;
+    font-style: oblique;
+}
+
+h1.tituloMobile{
+    font-size: 40px;
+}
+
+.parrafosMobile h3{
+    font-size: 30px;
+}
+
+.items-navMobile a{
+    text-decoration: none;
+    color: var(--claro);
+}
+
+.loginMobile{
+    margin: 0;
+}
