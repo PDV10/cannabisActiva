@@ -93,7 +93,6 @@ formRegistro.addEventListener("submit", (e) => {
     let flagNewUserValido = true;
     users.forEach(user => {
         if (inputRegEmail.value == user.email) {
-            console.log("email no disponible")
             appendAlert('Error, email no disponible. Intentelo de nuevo...', 'danger', alertaRegistro);
             flagNewUserValido = false;
         }
@@ -178,7 +177,7 @@ function desactivateSession() {
 
 function agregarItem() {
     let li = document.createElement("li")
-    li.classList.add("items-nav")
+    li.classList.add("items-navMobile")
     li.setAttribute("data-bs-toggle", "modal");
     li.setAttribute("data-bs-target", "#modalTabla")
     let a = document.createElement("a")
@@ -187,7 +186,6 @@ function agregarItem() {
     a.classList.add("link")
     li.appendChild(a);
     listaNav.insertBefore(li, document.querySelector(".linkInicio"));
-    console.log(li);
 }
 
 let btnGuardar = document.getElementById("btnGuardarTabla").addEventListener("click", (e) => {
@@ -299,9 +297,7 @@ if (btnComentar != null) {
 
 function agregarBtnsComentarios() {
     let btnsEliminar = document.querySelectorAll(".btn-eliminar");
-    console.log(btnsEliminar)
     for (let x of btnsEliminar) {
-        console.log(x)
         x.classList.remove("oculto")
     }
 }
@@ -310,7 +306,6 @@ function activarResponder() {
     let linkNoticias = document.getElementById("linkNoticias");
     if (linkNoticias.classList.contains("activo")) {
         let inputsResponder = document.querySelectorAll(".inputResponder");
-        console.log(inputsResponder)
         for (let y of inputsResponder) {
             y.disabled = false;
         }

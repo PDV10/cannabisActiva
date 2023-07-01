@@ -496,7 +496,6 @@ h1.tituloMobile{
 /*-------------------------------------- TABLA MODAL -------------------------------------- */
 
 .modalTabla{
-    width: 150% !important;
-    margin-top: 10%;
-    margin-left: -15%;
+    width: 100% !important;
+
 }

@@ -31,7 +31,8 @@
 
         <nav>
             <ul id="lista-nav">
-                <li class="items-nav linkInicio"> <a id="linkInicio" class="link" href="index.html#inicio">Inicio</a></li>
+                <li class="items-nav linkInicio"> <a id="linkInicio" class="link" href="index.html#inicio">Inicio</a>
+                </li>
                 <li class="items-nav"> <a id="linkNosotros" class="link" href="index.html#nosotros">Nosotros</a></li>
                 <li class="items-nav"> <a id="linkNoticias" class="activo link" href="index.html#noticias">Noticias</a>
                 </li>
@@ -238,8 +239,7 @@
         <div id="msjComentario"> </div>
         <div class="contenedor-input-comentar input-group">
             <div class="form-floating">
-                <input  type="text" class="form-control" placeholder="Leave a comment here"
-                    id="input-comentar" />
+                <input type="text" class="form-control" placeholder="Leave a comment here" id="input-comentar" />
                 <label for="floatingTextarea">Deja tu comentario</label>
             </div>
             <button id="btn-comentar" class="btn btn-primary">Comentar</button>
@@ -253,7 +253,7 @@
                         <div class="img-perfil-sm"></div>
                         <h5>Victorino Urrutia</h5>
                     </div>
-                    <button class="btn btn-danger position-relative rigth-0 top-0">X</button>
+                    <button class="btn btn-danger btn-eliminar oculto">X</button>
                 </div>
                 <div class="card-body">
                     <p>- Aguante la FIO!!</p>
@@ -261,8 +261,8 @@
                 <div class="card-footer">
 
                     <div class="form-floating">
-                        <textarea disabled class="form-control" placeholder="Leave a comment here"
-                            id="floatingTextarea"></textarea>
+                        <textarea disabled class="form-control inputResponder"
+                            placeholder="Leave a comment here"></textarea>
                         <label for="floatingTextarea"> Responder</label>
                     </div>
                 </div>
@@ -274,7 +274,7 @@
                         <div class="img-perfil-sm"></div>
                         <h5>Gabriel Gallo</h5>
                     </div>
-                    <button class="btn btn-danger position-relative rigth-0 top-0">X</button>
+                    <button class="btn btn-danger btn-eliminar oculto">X</button>
                 </div>
                 <div class="card-body">
                     <p>- Este añooo me traigo la Copa a mi casa</p>
@@ -282,15 +282,14 @@
                 <div class="card-footer">
 
                     <div class="form-floating">
-                        <textarea disabled class="form-control" placeholder="Leave a comment here"
-                            id="floatingTextarea"></textarea>
+                        <textarea disabled class="form-control inputResponder"
+                            placeholder="Leave a comment here"></textarea>
                         <label for="floatingTextarea"> Responder</label>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
     <hr class="separador">
     <footer>
         <p class="text-center text-body-secondary">
@@ -314,7 +313,7 @@
     </footer>
 
     <!-- Modal Login-->
-    <div class="modal fade " id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 
 
         <div class="modal-dialog modal-dialog-centered w-75">
@@ -431,45 +430,45 @@
     <!-- Modal Tabla Usuarios-->
     <div class="modal fade" id="modalTabla" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog ">
-          <div class="modal-content modalTabla me-5">
-            <div class="modal-header">
-                <h5 class="modal-title">Gestion de usuarios</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body d-flex flex-column justify-content-center align-items-center">
-            <table class="table">
-            
-                <thead>
-                    <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">Usuario</th>
-                    <th scope="col">Mail</th>
-                    <th scope="col" class="text-center">Accion</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th scope="row">1</th>
-                    <td>Lionel Messi</td>
-                    <td>LeoMessi@gmail.com</td>
-                    <td class="text-center"><button class="btn bg-danger text-light">X</button></td>
-                    </tr>
-                    <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Jacob@gmail.com</td>
-                    <td class="text-center"><button class="btn bg-danger text-light">X</button></td>
-                    </tr>
-                </tbody>
-                </table>
-                <div id="msjTabla">
+            <div class="modal-content modalTabla me-5">
+                <div class="modal-header">
+                    <h5 class="modal-title">Gestion de usuarios</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <button type="button" id="btnGuardarTabla" class="btn btn-primary align-items-end">Guardar</button>
+                <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                    <table class="table">
+
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Usuario</th>
+                                <th scope="col">Mail</th>
+                                <th scope="col" class="text-center">Accion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Lionel Messi</td>
+                                <td>LeoMessi@gmail.com</td>
+                                <td class="text-center"><button class="btn bg-danger text-light">X</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Jacob@gmail.com</td>
+                                <td class="text-center"><button class="btn bg-danger text-light">X</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="msjTabla">
+                    </div>
+                    <button type="button" id="btnGuardarTabla" class="btn btn-primary align-items-end">Guardar</button>
+                </div>
+
             </div>
-           
-          </div>
         </div>
-      </div>
+    </div>
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
