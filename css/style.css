@@ -207,6 +207,10 @@ nav ul{
     color: var(--colorFuenteOscuraClaro);
 }
 
+.contenedor-noticias h5{
+    margin-bottom: 30px;
+}
+
 .contenedor-noticias .noticias{
     display: flex;
     flex-direction: row;
@@ -222,6 +226,9 @@ nav ul{
     min-width: 300px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 0.3s ease;
+}
+.contenedor-noticias .card-body{
+    margin-top: 0px !important; 
 }
 
 .contenedor-noticias .noticias .card:hover{
