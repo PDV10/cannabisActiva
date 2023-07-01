@@ -22,36 +22,45 @@
 
 <body>
     <header>
-        
+
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
                 <a href="/">
                     <img class="logo ms-3" src="img/logo.png" alt="Logo Cannabis activa">
                 </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-                <div class="offcanvas-header">
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="items-navMobile"> <a id="linkInicio" class="link" href="index.html#inicio">Inicio</a></li>
-                    <li class="items-navMobile"> <a id="linkNosotros" class="link" href="index.html#nosotros">Nosotros</a></li>
-                    <li class="items-navMobile"> <a id="linkNoticias" class="activo link" href="index.html#noticias">Noticias</a></li>
-                    <li class="items-navMobile"> <a class="link" href="index.html#contacto">Contacto</a></li>
-                    <li class="items-navMobile loginMobile" data-bs-toggle="modal" data-bs-target="#modalLogin" > <a >Iniciar Sesion</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="items-navMobile"> <a id="linkInicio" class="link"
+                                    href="index.html#inicio">Inicio</a></li>
+                            <li class="items-navMobile"> <a id="linkNosotros" class="link"
+                                    href="index.html#nosotros">Nosotros</a></li>
+                            <li class="items-navMobile"> <a id="linkNoticias" class="activo link"
+                                    href="index.html#noticias">Noticias</a></li>
+                            <li class="items-navMobile"> <a class="link" href="index.html#contacto">Contacto</a></li>
+                            <li class="items-navMobile loginMobile" data-bs-toggle="modal" data-bs-target="#modalLogin">
+                                <a>Iniciar Sesion</a>
+                            </li>
 
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Search</button>
-                  </form>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
                 </div>
-              </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <section class="contenedor contenedor-noticia mt-5 pt-5">
         <h1 class="tituloMobile">Beneficios de las sustancias del cannabis THCA y CBDA</h1>
@@ -214,11 +223,75 @@
             </p>
         </div>
     </section>
-    <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    <hr class="separador">
+    <section class="contenedor-comentarios">
 
+        <div class="contenedor-input-comentar input-group">
+            <div class="form-floating">
+                <input disabled type="text" class="form-control" placeholder="Leave a comment here"
+                    id="floatingTextarea" />
+                <label for="floatingTextarea">Deja tu comentario</label>
+            </div>
+            <button class="btn  btn-primary" disabled><i class="bi bi-send"></i></button>
+        </div>
+
+
+
+        <div class="card p-1 w-100 mt-3">
+            <div class="card-header d-flex gap-3 align-items-center">
+                <div class="img-perfil-sm"></div>
+                <h5>Victorino Urrutia</h5>
+            </div>
+            <div class="card-body">
+                <p>- Aguante la FIO!!</p>
+            </div>
+            <div class="card-footer">
+
+                <div class="form-floating">
+                    <textarea disabled class="form-control" placeholder="Leave a comment here"
+                        id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea"> Responder</label>
+                </div>
+            </div>
+        </div>
+        <div class="card p-1 w-100 mt-3">
+            <div class="card-header d-flex gap-3 align-items-center">
+                <div class="img-perfil-sm"></div>
+                <h5>Gabriel Gallo</h5>
+            </div>
+            <div class="card-body">
+                <p>- Este añooo me traigo la Copa a mi casa</p>
+            </div>
+            <div class="card-footer">
+
+                <div class="form-floating">
+                    <textarea disabled class="form-control" placeholder="Leave a comment here"
+                        id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea"> Responder</label>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="separador">
+    <footer>
+        <p class="text-center text-body-secondary">
+            © 2023 TUDAI Olavarria, Grupo 11
+        </p>
+        <ul class="nav gap-4 justify-content-center border-bottom pb-3 mb-3 iconos">
+            <li>
+                <img src="/img/iconos/facebook.png" alt="facebook">
+            </li>
+            <li>
+                <img src="/img/iconos/whatsapp.png" alt="whatsapp">
+
+            </li>
+            <li>
+                <img src="/img/iconos/youtube.png" alt="youtube">
+            </li>
+            <li>
+                <img src="/img/iconos/instagram.png" alt="instagram">
+            </li>
         </ul>
-        <p class="text-center text-body-secondary">© 2023 TUDAI Olavarria, Grupo 11</p>
     </footer>
     <!-- Modal Login-->
     <div class="modal fade " id="modalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

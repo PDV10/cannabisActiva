@@ -105,13 +105,10 @@ formLogin.addEventListener("submit", (e) => {
 
     });
 
-    if (!flagEmail) {
-        appendAlert('Error, email desconocido. Intentelo de nuevo...', 'danger', 'login');
-    } else {
-        if (!flagContraseña) {
-            appendAlert('Error, contraseña incorrecta. Intentelo de nuevo...', 'danger', 'login');
-        }
+    if (!flagEmail || !flagContraseña) {
+        appendAlert('Error, email o contraseña incorrecto. Intentelo de nuevo...', 'danger', 'login');
     }
+
 
     flagEmail = false;
     flagContraseña = false;
