@@ -56,9 +56,15 @@ nav ul{
 .fuente-primaria{
     color: var(--colorPrimario);
 }
+.items-nav{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 .items-nav a{
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-decoration: none;
     color: var(--colorFuenteOscuraClaro);
 }
