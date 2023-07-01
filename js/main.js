@@ -65,6 +65,8 @@ function limpiarActivo() {
 /*--------------------------------- MANEJO DE FORMULARIOS ---------------------------------*/
 let btnShowLogin = document.getElementById("login");
 
+const alertLogin = document.getElementById('alerta-login');
+const alertaRegistro = document.getElementById("alerta-registro");
 
 let btnRegister = document.getElementById("btn-registrarse");
 let formRegistro = document.getElementById("form-registro");
@@ -74,13 +76,41 @@ let formRegistro = document.getElementById("form-registro");
 let formLogin = document.getElementById("form-login");
 let btnLogin = document.getElementById("btn-logearse");
 let inputLogEmail = document.getElementById("input-log-email");
+let inputRegEmail = document.getElementById("input-reg-email");
 let flagEmail = false;
 let inputLogPass = document.getElementById("input-log-password");
+let inputRegPass = document.getElementById("input-reg-password");
+let inputRegRePass = document.getElementById("input-reg-repassword");
 let flagContraseña = false;
 
 formRegistro.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log("submit form registro " + e.target)
+    let flagNewUserValido = true;
+    users.forEach(user => {
+        if (inputRegEmail.value == user.email) {
+            console.log("email no disponible")
+            appendAlert('Error, email no disponible. Intentelo de nuevo...', 'danger', alertaRegistro);
+            flagNewUserValido = false;
+        }
+    });
+    if (flagNewUserValido && inputRegPass.value != inputRegRePass.value) {
+        appendAlert('Error, las contraseñas no son iguales. Intentalo de nuevo...', 'danger', alertaRegistro)
+        flagNewUserValido = false;
+        return
+    }
+
+    if (flagNewUserValido) {
+        let newUser = {
+            nombre: document.getElementById("input-name").value,
+            apellido: document.getElementById("input-lastname").value,
+            email: inputRegEmail.value,
+            contraseña: inputRegPass.value
+        }
+        users.push(newUser)
+        activateSession(newUser);
+        document.getElementById("btn-reg-close").click();
+    }
+
 });
 
 formLogin.addEventListener("submit", (e) => {
@@ -106,7 +136,7 @@ formLogin.addEventListener("submit", (e) => {
     });
 
     if (!flagEmail || !flagContraseña) {
-        appendAlert('Error, email o contraseña incorrecto. Intentelo de nuevo...', 'danger', 'login');
+        appendAlert('Error, email o contraseña incorrecto. Intentelo de nuevo...', 'danger', alertLogin);
     }
 
 
@@ -118,7 +148,7 @@ function activateSession(user) {
 
     let a = btnShowLogin.firstChild;
     btnShowLogin.removeChild(a);
-    btnShowLogin.innerHTML = `<a href="index.html">Cierra Sesion ${user.nombre}</a>`;
+    btnShowLogin.innerHTML = `<a href="index.html">Cierra Sesion <span class="activo">${user.nombre}</span></a>`;
 
     btnShowLogin.addEventListener("click", (e) => {
 
@@ -135,8 +165,8 @@ function desactivateSession() {
 }
 /*--------------------------------- MANSAJE DE ALERTA ---------------------------------*/
 
-const alertLoginHelper = document.getElementById('alerta-login');
-const alertRegisterHelper = document.getElementById('alerta-registro');
+
+
 const wrapper = document.createElement('div');
 const appendAlert = (message, type, section) => {
 
@@ -147,14 +177,14 @@ const appendAlert = (message, type, section) => {
         '</div>'
     ].join('');
 
-    alertLoginHelper.classList.remove("oculto");
-    alertLoginHelper.classList.add("visible");
+    section.classList.remove("oculto");
+    section.classList.add("visible");
 
-    alertLoginHelper.append(wrapper)
+    section.append(wrapper)
 
     setTimeout(() => {
-        alertLoginHelper.classList.remove("visible");
-        alertLoginHelper.classList.add("oculto");
-        alertLoginHelper.removeChild(wrapper);
+        section.classList.remove("visible");
+        section.classList.add("oculto");
+        section.innerHTML = "";
     }, 5000);
 }
