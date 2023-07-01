@@ -378,15 +378,19 @@ form .items-nav a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .contenedor-contacto h1{
     color: var(--colorFuenteOscuraClaro);
 }
 
-.contacto h1{
+.contacto h3{
     color: var(--colorPrimario);
+    font-family: var(--fuenteTitulos);
+}
+.contacto p{
+    margin-bottom: 50px;
 }
 
 .contenedor-contacto .contacto{
@@ -400,7 +404,6 @@ form .items-nav a{
     width: 45%;
     height: 90%;
     margin: 3% 0; 
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 
 .contacto .section-contacto img{
