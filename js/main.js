@@ -15,27 +15,31 @@ let USER_X = {
 }
 
 let users = [USER_X, USER_ADMIN];
+let userActivo;
 let session = false;
 let links = document.querySelectorAll(".link");
 
-let ancorBuscador = document.getElementById("ancorBuscador").addEventListener("click", (e) => {
-    e.preventDefault();
-});
+let ancorBuscador = document.getElementById("ancorBuscador");
+if (ancorBuscador != null) {
+    ancorBuscador.addEventListener("click", (e) => {
+        e.preventDefault();
+    });        
+}
 
 let input = document.getElementById("inputBuscador");
 let liBuscador = document.getElementById("liBuscador")
 
-liBuscador.addEventListener("mouseover", () => {
-    input.classList.remove("esconderInput")
-    input.classList.add("expandirInput")
-})
+if(liBuscador != null){
+    liBuscador.addEventListener("mouseover", () => {
+        input.classList.remove("esconderInput")
+        input.classList.add("expandirInput")
+    })
 
-liBuscador.addEventListener("mouseleave", () => {
-    input.classList.add("esconderInput")
-    input.classList.remove("expandirInput")
-})
-
-console.log(links)
+    liBuscador.addEventListener("mouseleave", () => {
+        input.classList.add("esconderInput")
+        input.classList.remove("expandirInput")
+    })
+}
 
 function setearListeners() {
 
@@ -151,6 +155,7 @@ function activateSession(user) {
         agregarItem();
     }
     let a = btnShowLogin.firstChild;
+    userActivo = user;
     btnShowLogin.removeChild(a);
     btnShowLogin.innerHTML = `<a href="index.html">Cierra Sesion <span class="activo">${user.nombre}</span></a>`;
 
@@ -166,6 +171,7 @@ function desactivateSession() {
     let a = btnShowLogin.firstChild;
     btnShowLogin.removeChild(a);
     btnShowLogin.innerHTML = `<a>Inicia Sesion</a>`;
+    session = false;
 }
 
 function agregarItem(){
@@ -194,7 +200,7 @@ let btnGuardar = document.getElementById("btnGuardarTabla").addEventListener("cl
         divMensaje.removeChild(p);
     }, 2000);
 })
-/*--------------------------------- MANSAJE DE ALERTA ---------------------------------*/
+/*--------------------------------- MANSAJE DE ALERTA FORMULARIOS---------------------------------*/
 
 
 
@@ -218,4 +224,63 @@ const appendAlert = (message, type, section) => {
         section.classList.add("oculto");
         section.innerHTML = "";
     }, 5000);
+}
+
+/* --------------------------- MENSAJE CONSULTA --------------------------------*/ 
+let btnConsulta = document.getElementById("btn-consulta");
+let msgConsulta = document.getElementById("msjConsulta"); 
+if(btnConsulta){
+
+    btnConsulta.addEventListener("click", (e)=>{
+        e.preventDefault();
+        let msg = document.createElement("p");
+        msg.classList.add("text-center","fuente-primaria","mb-3");
+        msg.innerHTML = "Consulta enviada correctamente";
+        msgConsulta.appendChild(msg);
+        setTimeout(() => {
+            msgConsulta.removeChild(msg);
+        }, 2000);
+    })
+}
+    
+let btnComentar = document.getElementById("btn-comentar");
+
+if(btnComentar != null){
+
+    btnComentar.addEventListener("click", (e)=>{
+        if(!session){
+            document.getElementById("login").click();
+        }else{
+            let inpComentar = document.getElementById("input-comentar");
+            let cajaComentarios = document.getElementById("caja-comentarios");
+            let comentario = inpComentar.value; 
+            inpComentar.value = "";
+            let card = `<div class="card p-1 w-100 mt-3">
+                             <div class="header-comentario card-header d-flex gap-3 align-items-center justify-content-between">
+                                <div class="d-flex gap-3 align-items-center">
+                                    <div class="img-perfil-sm"></div>
+                                        <h5>${userActivo.nombre}</h5>
+                                    </div>
+                                    <button class="btn btn-danger position-relative rigth-0 top-0">X</button>
+                                </div>
+                            <div class="card-body">
+                            <p>${comentario}</p>
+                        </div>
+                        <div class="card-footer">
+
+                        <div class="form-floating">
+                            <textarea disabled class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea"> Responder</label>
+                        </div>
+                            </div>
+                        </div>`;
+            if(comentario != ""){
+                cajaComentarios.innerHTML += card;
+            }else{
+                let msjComentario = document.getElementById("msjComentario");
+                appendAlert("no se puede agregar comentarios vacios","danger",msjComentario)
+            }
+        }
+    })
 }
