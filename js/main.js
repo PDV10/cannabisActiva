@@ -77,6 +77,7 @@ let inputLogEmail = document.getElementById("input-log-email");
 let flagEmail = false;
 let inputLogPass = document.getElementById("input-log-password");
 let flagContraseña = false;
+let listaNav = document.getElementById("lista-nav");
 
 formRegistro.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -93,6 +94,7 @@ formLogin.addEventListener("submit", (e) => {
                 session = true;
                 activateSession(user);
 
+                
                 /*
                 ACA DEBERIAMOS INFORMAR AL USUARIO CON UN COMENTARIO EN PANTALLA 
                 CRAR UN P ESTILIZADO PARA INFORMAR AL USUARIO
@@ -115,7 +117,9 @@ formLogin.addEventListener("submit", (e) => {
 });
 
 function activateSession(user) {
-
+    if(user.nombre ==  "admin"){
+        agregarItem();
+    }
     let a = btnShowLogin.firstChild;
     btnShowLogin.removeChild(a);
     btnShowLogin.innerHTML = `<a href="index.html">Cierra Sesion ${user.nombre}</a>`;
@@ -133,6 +137,33 @@ function desactivateSession() {
     btnShowLogin.removeChild(a);
     btnShowLogin.innerHTML = `<a>Inicia Sesion</a>`;
 }
+
+function agregarItem(){
+    let li = document.createElement("li")
+    li.classList.add("items-nav") 
+    li.setAttribute("data-bs-toggle","modal");
+    li.setAttribute("data-bs-target","#modalTabla")
+    let a = document.createElement("a")
+    a.setAttribute("id","administradorUsuarios") 
+    a.innerHTML= "Gestion Usuarios";
+    a.classList.add("link")
+    li.appendChild(a);
+    listaNav.insertBefore(li, document.querySelector(".linkInicio"));
+    console.log(li);
+}
+
+let btnGuardar = document.getElementById("btnGuardarTabla").addEventListener("click", (e)=>{
+    let divMensaje = document.getElementById("msjTabla");
+    let p = document.createElement("p");
+    p.classList.add("fuente-primaria");
+    
+    p.innerHTML = "Configuracion guardada";
+    divMensaje.innerHTML = "";
+    divMensaje.appendChild(p);
+    setTimeout(() => {
+        divMensaje.removeChild(p);
+    }, 2000);
+})
 /*--------------------------------- MANSAJE DE ALERTA ---------------------------------*/
 
 const alertLoginHelper = document.getElementById('alerta-login');

@@ -469,3 +469,11 @@ h1.tituloMobile{
 .loginMobile{
     margin: 0;
 }
+
+/*-------------------------------------- TABLA MODAL -------------------------------------- */
+
+.modalTabla{
+    width: 150% !important;
+    margin-top: 10%;
+    margin-left: -15%;
+}
