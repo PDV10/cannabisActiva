@@ -485,10 +485,6 @@ h1.tituloMobile{
     color: var(--claro);
 }
 
-.loginMobile{
-    margin: 0px 0px 50px 0px !important;
-}
-
 #msjConsulta .alert{
     margin: 0px !important;
 }
@@ -499,4 +495,7 @@ h1.tituloMobile{
     width: 150% !important;
     margin-top: 10%;
     margin-left: -15%;
+}
+form .items-nav a {
+    margin-left: 10px;
 }
